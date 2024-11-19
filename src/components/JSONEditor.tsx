@@ -1,4 +1,4 @@
-import React from 'react';
+
 interface JSONEditorProps {
   json: string;
   onChange: (json: string) => void;

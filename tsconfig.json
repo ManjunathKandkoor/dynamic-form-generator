@@ -1,7 +1,34 @@
+// {
+//   "compilerOptions": {
+//     "allowImportingTsExtensions": true,
+//     "moduleResolution": "node",
+//     "jsx": "react-jsx",
+//     "incremental": true,
+//     "noEmit": true,  
+//     "lib": ["ESNext", "dom"]
+//   },
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ]
+// }
+
+
+
 {
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "incremental": true,
+    "noEmit": true,  // Ensures that no output files are generated during compilation
+    "lib": ["ESNext", "dom"],
+    "allowSyntheticDefaultImports": true  // Enables default import for React
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ]
 }
+

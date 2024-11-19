@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import App from "../App";
-import React from 'react';
+
 
 test("renders form and validates submission", () => {
   render(<App />);
