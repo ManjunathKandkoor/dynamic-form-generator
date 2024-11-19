@@ -44,7 +44,7 @@ Testing Tools: Jest and Playwright for comprehensive test coverage.
 
 1. Clone the Repository:
    ```bash
-   git clone https://github.com/yourusername/dynamic-form-generator.git
+   git clone https://github.com/ManjunathKandkoor/dynamic-form-generator.git
    cd dynamic-form-generator
    ```
 
