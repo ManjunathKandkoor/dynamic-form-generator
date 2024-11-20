@@ -60,7 +60,7 @@ Testing Tools: Jest and Playwright for comprehensive test coverage.
    Open the app at `http://localhost:5173` in your browser.
 
 4. Example JSON Schema:
-
+```
    {
      "formTitle": "Sample Form",
      "formDescription": "Please fill out this form.",
@@ -75,7 +75,7 @@ Testing Tools: Jest and Playwright for comprehensive test coverage.
      ]
    }
    
-
+```
 {
 
   "formTitle": "Project Requirements Survey",
@@ -212,7 +212,7 @@ Testing Tools: Jest and Playwright for comprehensive test coverage.
 
 }
 
-
+```
 
  Testing Instructions
 
