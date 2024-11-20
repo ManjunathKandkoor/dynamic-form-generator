@@ -61,7 +61,7 @@ Testing Tools: Jest and Playwright for comprehensive test coverage.
 
 4. Example JSON Schema:
 
- Example1:  {
+   {
      "formTitle": "Sample Form",
      "formDescription": "Please fill out this form.",
      "fields": [
@@ -74,8 +74,8 @@ Testing Tools: Jest and Playwright for comprehensive test coverage.
        }
      ]
    }
-   ```
-Example2:
+   
+
 {
 
   "formTitle": "Project Requirements Survey",
