@@ -1,81 +1,82 @@
- # React + TypeScript + Vite
+---
 
- Dynamic Form Generator
+# Dynamic Form Generator
 
-This project is a dynamic form generator built using **React**, **TypeScript**, and **Tailwind CSS**. The application takes a JSON schema as input and dynamically generates a styled, functional form in real-time. The interface includes a split-screen design with a JSON editor on one side and a real-time form preview on the other.
+This project is a dynamic form generator built using **React**, **TypeScript**, and **Tailwind CSS**. The application takes a JSON schema as input and dynamically generates a styled, functional form in real-time.
 
-🚀 Features
-Main Interface
-Split-Screen Design
-  Left Side: JSON editor with syntax highlighting, real-time validation, and error messages for invalid JSON.
-  Right Side: Form preview that updates dynamically as the JSON schema is edited.
-Mobile-Responsive Layout**:
- On smaller screens, the editor and form preview stack vertically for better usability.
+## 🚀 Features
 
- Form Features
+### Main Interface
+- **Split-Screen Design**
+  - **Left Side**: JSON editor with syntax highlighting, real-time validation, and error messages for invalid JSON.
+  - **Right Side**: Form preview that updates dynamically as the JSON schema is edited.
+
+- **Mobile-Responsive Layout**:
+  - On smaller screens, the editor and form preview stack vertically for better usability.
+
+### Form Features
 - Supports all standard field types defined in the JSON schema.
 - Displays proper validation messages for required fields, invalid inputs, and pattern mismatches.
 - Includes loading states where appropriate.
 - Allows form submission with `console.log()` and displays a success message upon completion.
 - Styled consistently using **Tailwind CSS**.
 
-Testing
-- Comprehensive testing using **Playwright** (E2E testing) and **Jest** (unit testing):
-  - Validates JSON schema functionality.
-  - Tests real-time form generation and updates.
-  - Ensures form validation and submission correctness.
-  - Verifies responsiveness and error handling for edge cases.
+## 🛠️ Technical Stack
+- **Frontend Framework**: React 18+
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Form Handling**: React Hook Form
+- **JSON Editor**: Monaco Editor
+- **Testing Tools**: Jest and Playwright
 
 ---
 
-🛠️ Technical Stack
+## Setup Instructions
 
-Frontend Framework**: React 18+
-Language: TypeScript for type safety and robust development.
-Styling: Tailwind CSS for consistent and responsive design.
-Form Handling: React Hook Form for efficient form validation and state management.
-JSON Editor: Monaco Editor for a rich editing experience.
-Testing Tools: Jest and Playwright for comprehensive test coverage.
-
----
-
-
- Setup Instructions
-
-1. Clone the Repository:
-   ```bash
-   git clone https://github.com/ManjunathKandkoor/dynamic-form-generator.git
-   cd dynamic-form-generator
-   ```
-
-2.Install Dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Run the Development Server:
-   ```bash
-   npm run dev
-   ```
-   Open the app at `http://localhost:5173` in your browser.
-
-4. ### Example1 JSON Schema
+### 1. Clone the Repository:
+```bash
+git clone https://github.com/ManjunathKandkoor/dynamic-form-generator.git
+cd dynamic-form-generator
 ```
-   {
-     "formTitle": "Sample Form",
-     "formDescription": "Please fill out this form.",
-     "fields": [
-       {
-         "id": "name",
-         "type": "text",
-         "label": "Name",
-         "required": true,
-         "placeholder": "Enter your name"
-       }
-     ]
-   }
-   
-### Example2 JSON Schema
+
+### 2. Install Dependencies:
+```bash
+npm install
+```
+
+### 3. Run the Development Server:
+```bash
+npm run dev
+```
+Visit `http://localhost:5173` in your browser.
+
+---
+
+## Example 1: JSON Schema
+
+You can use the following JSON schema to test the form generator:
+
+```json
+{
+  "formTitle": "Sample Form",
+  "formDescription": "Please fill out this form.",
+  "fields": [
+    {
+      "id": "name",
+      "type": "text",
+      "label": "Name",
+      "required": true,
+      "placeholder": "Enter your name"
+    }
+  ]
+}
+```
+
+---
+
+## Example 2: JSON Schema
+
+Another example of a more complex form schema:
 
 ```json
 {
@@ -146,35 +147,35 @@ Testing Tools: Jest and Playwright for comprehensive test coverage.
     }
   ]
 }
+```
 
- Testing Instructions
+---
 
-1. Run Unit Tests:
-   ```bash
-   npm run test
-   ```
+## Testing Instructions
 
-2. Run E2E Tests:
-   ```bash
-   npx playwright test
-   ```
+### 1. Run Unit Tests:
+```bash
+npm run test
+```
 
+### 2. Run E2E Tests:
+```bash
+npx playwright test
+```
 
-Output of the Project:
+---
+
+## Output of the Project
 
 ![Dynamic Form Generator Interface](./assets/DynamicFormGenerator.png)
 
-This screenshot shows the main interface of the Dynamic Form Generator. On the left, users can edit the JSON schema, and on the right, they see the real-time preview of the form.
+### Buttons in the Interface:
+1. **Download Button**: Allows the user to download the current JSON schema as a `.json` file.
+2. **Submit Button**: Submits the data from the form preview.
+3. **Copy Form JSON Button**: Copies the JSON content from the editor to the clipboard.
+4. **Toggle Dark Mode Button**: Switches the interface between light and dark themes.
 
-1. Download Button:
-Purpose: Allows the user to download the current JSON schema (representing the form displayed on the right side of the screen) as a .json file.
+---
 
-2. Submit Button: 
-Purpose: Submits the data from the form preview generated based on the JSON schema
 
-3.Copy Form JSON Button:
- Purpose: Copies the JSON content from the editor to the clipboard.
-
-4.Toggle Dark Mode Button:
-Purpose: Switches the interface between light and dark themes.
 
